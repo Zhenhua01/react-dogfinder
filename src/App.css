@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+ul {
+  list-style: none;
+}
+
+.Nav > li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.active {
+  color: green;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
