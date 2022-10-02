@@ -1,10 +1,9 @@
 import { useParams, useNavigate, Navigate } from 'react-router-dom';
 
 function DogDetails({ dogs }) {
-  const navigate = useNavigate();
   const params = useParams();
   const dogName = params.name;
-  const [ dog ] = dogs.filter(d => d.name === dogName);
+  const [dog] = dogs.filter(d => d.name === dogName);
 
   if (!dog) {
     return (<Navigate to="/dogs" />);
@@ -24,7 +23,7 @@ function DogDetails({ dogs }) {
       </ul>
     </div>
 
-  )
+  );
 
 }
 

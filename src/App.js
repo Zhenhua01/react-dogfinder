@@ -10,14 +10,14 @@ function App() {
 
   if (!dogs) {
     axios.get('http://localhost:5001/dogs').then(res => setDogs(res.data));
-    return <p>loading</p>
+    return <p>loading</p>;
   }
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav dogs={dogs}/>
-        <RoutesList dogs={dogs}/>
+        <Nav dogs={dogs} />
+        <RoutesList dogs={dogs} />
       </BrowserRouter>
     </div>
   );
